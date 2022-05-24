@@ -1,0 +1,66 @@
+/* selector universal, borrar estilos que vienen por default en hmtl */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container{
+    background-color: rgb(228, 29, 89);
+    color: black;
+    padding: 20px 0;
+    display: flex;
+    /* Alinear horizontalmente */
+    justify-content: center;
+}
+
+.menu {
+    border: 1px solid black;
+    width: 70%;
+    font-family: 'Segoe UI';
+    text-align: center;
+    display: flex;
+    justify-content:space-around;
+}
+
+.product-container {
+    background-color: turquoise;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.product {
+    width: 70%;
+    /* View Port = Unidad de medida relativa */
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    /* Alinear Verticalmente */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.photo-grid-container{
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    /* Cuando desbordan los elementos se activa */
+    flex-wrap: wrap;
+    /* Direccion */
+    /* flex-direction: column; */
+}
+
+.first-item{
+    /* Orden - sin afectar a los elementos circundantes / derecha num positivo, izquierda un num negativo */
+    order: 1;
+}
+
+.last-item{
+    order: -1;
+} 
